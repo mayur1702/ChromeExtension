@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mayur1702/ChromeExtension/issues"
   },
-  "homepage": "https://github.com/mayur1702/ChromeExtension#readme"
+  "homepage": "https://github.com/mayur1702/ChromeExtension#readme",
+  "dependencies": {
+    "@types/chrome": "0.0.126"
+  }
 }

@@ -1,0 +1,27 @@
+{
+    "name": "My First Chromestore Extension",
+    "description": "This is my first chromestore test extension",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false 
+    },
+    "permissions": ["bookmarks"],
+    "content_scripts": [
+        {
+            "matches": ["https://*.youtube.com/*"],
+            "js": ["content.js"]
+            
+        }
+    ],
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "browser_action": {
+        "default_title": "This is sparta!",
+        "default_popup": "popup.html"
+    }
+}
